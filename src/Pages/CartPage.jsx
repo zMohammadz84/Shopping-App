@@ -106,7 +106,7 @@ const CartPage = () => {
           })}
         </div>
       </div>
-      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 rounded-md p-2">
+      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 p-2 sm:rounded-sm">
         <CartSummary />
       </div>
     </div>
