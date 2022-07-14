@@ -34,7 +34,7 @@ const CheckOutPage = () => {
           );
         })}
       </div>
-      <div className=" bg-violet-200 rounded-md w-full fixed sm:sticky bottom-0 gap-x-10 flex justify-between p-2  sm:right-0 sm:top-0 sm:flex-col sm:max-w-[250px] max-h-36 sm:min-h-[9rem]">
+      <div className=" bg-violet-200 w-full fixed sm:sticky bottom-0 gap-x-10 flex justify-between p-2  sm:right-0 sm:top-0 sm:flex-col sm:max-w-[250px] max-h-36 sm:min-h-[9rem]">
         <div className="text-sm sm:flex justify-between hidden">
           <p className="text-slate-500">Name : </p>
           <p> {user.name}</p>
