@@ -22,7 +22,7 @@ const CheckOutPage = () => {
         <p>Name : </p>
         <p>{user.name}</p>
       </div>
-      <div className="p-4 flex-1 sm:p-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center gap-5">
+      <div className="p-4 flex-1 sm:p-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
         {cart.map((p) => {
           return (
             <div className="relative outline outline-violet-200 rounded-sm max-w-[150px]">
@@ -34,7 +34,7 @@ const CheckOutPage = () => {
           );
         })}
       </div>
-      <div className=" bg-violet-200 rounded-md w-full sticky bottom-0 gap-x-10 flex justify-between p-2  sm:right-0 sm:top-0 sm:flex-col sm:max-w-[250px] max-h-36 sm:min-h-[9rem]">
+      <div className=" bg-violet-200 rounded-md w-full fixed sm:sticky bottom-0 gap-x-10 flex justify-between p-2  sm:right-0 sm:top-0 sm:flex-col sm:max-w-[250px] max-h-36 sm:min-h-[9rem]">
         <div className="text-sm sm:flex justify-between hidden">
           <p className="text-slate-500">Name : </p>
           <p> {user.name}</p>

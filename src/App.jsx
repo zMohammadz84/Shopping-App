@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ProfilePage from "./Pages/ProfilePage";
 import CheckOutPage from "./Pages/CheckOutPage";
 import SelectForm from "./Components/SelectForm";
+import NotFoundPage from "./Pages/NotFoundPage";
 
 function App() {
   const routes = useRoutes([
@@ -24,12 +25,15 @@ function App() {
     },
     { path: "/profile", element: <ProfilePage /> },
     { path: "/checkout", element: <CheckOutPage /> },
+    { path: "*", element: <NotFoundPage /> },
   ]);
   return (
     <>
       <Provider store={Store}>
         <Layout>
-          <div className=" container m-auto  xl:max-w-screen-xl">{routes}</div>
+          <div className=" container m-auto relative xl:max-w-screen-xl">
+            {routes}
+          </div>
         </Layout>
       </Provider>
       <ToastContainer />

@@ -26,7 +26,7 @@ const CartPage = () => {
             return (
               <div
                 key={p._id}
-                className="bg-violet-100 rounded-md overflow-hidden sm:flex sm:justify-between items-center border border-slate-300"
+                className="bg-violet-100 rounded-md overflow-hidden sm:flex sm:justify-between items-center border border-slate-300 "
               >
                 <div className="sm:h-24">
                   <img className="w-full h-full" src={p.image} alt={p.name} />
@@ -106,7 +106,7 @@ const CartPage = () => {
           })}
         </div>
       </div>
-      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky bottom-0 sm:m-0 rounded-md p-2">
+      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 rounded-md p-2">
         <CartSummary />
       </div>
     </div>
