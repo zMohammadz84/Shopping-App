@@ -26,9 +26,9 @@ const CartPage = () => {
             return (
               <div
                 key={p._id}
-                className="bg-violet-100 rounded-md overflow-hidden sm:flex sm:justify-between items-center border border-slate-300 "
+                className="bg-violet-100 rounded-md overflow-hidden sm:flex sm:justify-between items-center border border-slate-300"
               >
-                <div className="sm:h-24">
+                <div className="sm:h-24 sm:w-36 h-52">
                   <img className="w-full h-full" src={p.image} alt={p.name} />
                 </div>
                 <div className="p-2 flex flex-col sm:flex-row sm:justify-evenly sm:flex-1 gap-5">
@@ -106,7 +106,7 @@ const CartPage = () => {
           })}
         </div>
       </div>
-      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 rounded-md p-2">
+      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 rounded-md p-2 min-w-[200px]">
         <CartSummary />
       </div>
     </div>
@@ -145,7 +145,7 @@ const CartSummary = () => {
           <p>{total}$</p>
         </div>
         <Link
-          to={user ? "/checkout" : "selectform"}
+          to={user ? "/checkout" : "/login?redirect=/checkout"}
           className="bg-violet-500 block text-center rounded-md sm:w-full py-1.5 px-3 text-white"
         >
           Go to checkout

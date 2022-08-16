@@ -25,8 +25,8 @@ const CheckOutPage = () => {
       <div className="p-4 flex-1 sm:p-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
         {cart.map((p) => {
           return (
-            <div className="relative outline outline-violet-200 rounded-sm max-w-[150px]">
-              <img src={p.image} alt={p.name} />
+            <div className="relative outline outline-violet-200 rounded-sm max-w-[150px] h-32">
+              <img src={p.image} alt={p.name} className="w-full h-full" />
               <span className="absolute right-2 bottom-2 text-white bg-violet-400 w-5 h-5 rounded-full flex justify-center items-center">
                 {p.quantity}
               </span>

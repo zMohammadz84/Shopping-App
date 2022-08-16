@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-slate-500">
+    <header className="bg-slate-500 sticky top-0 z-50">
       <nav className="flex justify-between text-white container m-auto xl:max-w-screen-xl ">
         <div className="flex justify-center items-center">
           <NavLink

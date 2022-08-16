@@ -10,7 +10,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ProfilePage from "./Pages/ProfilePage";
 import CheckOutPage from "./Pages/CheckOutPage";
-import SelectForm from "./Components/SelectForm";
 import NotFoundPage from "./Pages/NotFoundPage";
 
 function App() {
@@ -18,11 +17,7 @@ function App() {
     { path: "/", element: <HomePage /> },
     { path: "/login", element: <LoginPage /> },
     { path: "/signup", element: <SignupPage /> },
-    {
-      path: "/cart",
-      element: <CartPage />,
-      children: [{ path: "selectform", element: <SelectForm /> }],
-    },
+    { path: "/cart", element: <CartPage /> },
     { path: "/profile", element: <ProfilePage /> },
     { path: "/checkout", element: <CheckOutPage /> },
     { path: "*", element: <NotFoundPage /> },
