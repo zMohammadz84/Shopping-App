@@ -19,7 +19,7 @@ const CartPage = () => {
   }
 
   return (
-    <div className="sm:flex justify-between gap-x-5 sm:p-4">
+    <div className="flex flex-col sm:flex-row justify-between gap-x-5 sm:p-4 min-h-screen">
       <div className="flex flex-1 flex-col sm:flex-row justify-between p-4 sm:p-0">
         <div className=" w-full space-y-5">
           {cart.map((p) => {
@@ -106,7 +106,7 @@ const CartPage = () => {
           })}
         </div>
       </div>
-      <div className="bg-violet-200 mt-5 sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 rounded-md p-2 min-w-[200px]">
+      <div className="bg-violet-200 mt-auto sm:w-96 max-h-[230px] sticky w-full bottom-0 sm:m-0 rounded-md p-2 min-w-[200px] ">
         <CartSummary />
       </div>
     </div>
